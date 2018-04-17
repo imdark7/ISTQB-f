@@ -1,0 +1,17 @@
+﻿@using ISTQB_f.Models
+@model Question
+@{
+    ViewBag.Title = "Тренировка ISTQB Foundation";
+}
+
+ <script type="text/javascript" src="~/Scripts/Components/BodyContent.jsx"></script>
+<script type="text/javascript" src="~/Scripts/Components/ContentBlock.jsx"></script>
+<script type="text/javascript" src="~/Scripts/Components/Question.jsx"></script>
+<script type="text/javascript" src="~/Scripts/Components/SettingsBlock.jsx"></script>
+<script type="text/javascript" src="~/Scripts/Components/SettingsLink.jsx"></script>
+<script type="text/javascript" src="~/Scripts/Components/AnswerBlock.jsx"></script>
+<script src="~/Scripts/dist/autosize.js"></script>
+<script type="text/babel">
+    ReactDOM.render(<BodyContent question='@Html.Raw(Json.Encode(Model))' />, document.getElementById("question"));
+</script>
+<div id="question"></div>

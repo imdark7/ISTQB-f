@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Exam Settings";
+}
+<script>
+    var language = "ru";
+    var isNative = true;
+    function showOptions(id) {
+        document.getElementById(id).classList.toggle("show");
+    }
+    window.onclick = function (e) {
+        if (!e.target.matches('.dropbtn')) {
+            var langDropdown = document.getElementById("language-dropdown-options");
+            if (langDropdown.classList.contains('show')) {
+                langDropdown.classList.remove('show');
+            }
+            var nativeDropdown = document.getElementById("is-native-dropdown-options");
+            if (nativeDropdown.classList.contains('show')) {
+                nativeDropdown.classList.remove('show');
+            }
+        };
+    }
+
+    function langSelect(lang) {
+        document.getElementById("language-dropdown").textContent = lang;
+        if (lang === "Русский") {
+            language = "ru";
+        } else {
+            language = "en";
+        }
+    }
+    function isNativeSelect(native) {
+        document.getElementById("is-native-dropdown").textContent = native + " язык";
+        if (native === "Родной") {
+            isNative = true;
+        } else {
+            isNative = false;
+        }
+    }
+</script>
+
+<div class="jumbotron">
+    <div class="navbarme container" style="align-content: center; background: rgb(19, 74, 70)">
+        <div class="dropdown" style="padding: 7px; height: 62px; color: aliceblue">Параметры экзамена:</div>
+        <div class="dropdown">
+            <button id="is-native-dropdown" class="dropbtn" onclick="showOptions('is-native-dropdown-options')" style="width: 160px">Родной язык</button>
+            <div class="dropdown-content" id="is-native-dropdown-options">
+                <a href="#" onclick="isNativeSelect(this.textContent)">Родной</a>
+                <a href="#" onclick="isNativeSelect(this.textContent)">Неродной</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button id="language-dropdown" class="dropbtn" onclick="showOptions('language-dropdown-options')" style="width: 160px">Русский</button>
+            <div class="dropdown-content" id="language-dropdown-options">
+                <a href="#" onclick="langSelect(this.textContent)">Русский</a>
+                <a href="#" onclick="langSelect(this.textContent)">Английский</a>
+            </div>
+        </div>
+    </div>
+    <div style="font-size: 12pt; margin-top: 20px; padding-left: 20px">
+        <p>Вам предлагается пройти тренировочный экзамен ISTQB Foundation Level</p>
+        <p>☺ 40 случайных вопросов</p>
+        <p>☺ Ограничение по времени - 60 минут. Если выбран параметр "Неродной язык", то ограничение - 75 минут</p>
+        <p>☺ Проходной балл - 65% или 26 правильных ответов</p>
+        <p class="text-center">
+            <input class="btn btn-primary start-button" type="button" value="Старт" onclick="location.href=`/Exam/Start?language=${language}&isNative=${isNative}`" />
+        </p>
+    </div>
+</div>

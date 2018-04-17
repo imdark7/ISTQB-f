@@ -1,0 +1,16 @@
+﻿@model ISTQB_f.Models.Exam.ExamViewModel
+@{
+    ViewBag.Title = "ISTQB Foundation Экзамен";
+}
+
+<script src="~/Scripts/Components/ExamContent.jsx"></script>
+<script src="~/Scripts/Components/OrganizerBlock.jsx"></script>
+<script src="~/Scripts/Components/Question.jsx"></script>
+<script src="~/Scripts/Components/AnswerBlock.jsx"></script>
+<script type="text/babel">
+    ReactDOM.render(
+    <ExamContent data='@Html.Raw(Json.Encode(Model))' />, document.getElementById("examen"));
+</script>
+
+<div id="examen"></div>
+
