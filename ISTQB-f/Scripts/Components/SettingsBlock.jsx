@@ -8,6 +8,13 @@
     componentWillReceiveProps(nextProps) {
         this.setState({ strategy: nextProps.strategy });
     }
+    componentDidMount() {
+        $(document).keypress(function (e) {
+            if (e.which == 13 && document.getElementById("questionNumberInput") === document.activeElement) {
+                document.getElementById("go-go-power-rangers").click();
+            }
+        });
+    }
     render() {
         return (
             <div>
@@ -30,8 +37,8 @@
                         />
                     </li>
                     <li style={{padding: "9px"}} className="settings-label">
-                        <input style={{width: "110px", marginRight: "10px"}} id="questionNumberInput" placeholder="Номер вопроса" />
-                        <button className="btn btn-default" onClick={() => this.props.gotoHandler()}>Go!</button>
+                        <input style={{width: "113px", marginRight: "10px"}} id="questionNumberInput" placeholder="Номер вопроса" />
+                        <button id="go-go-power-rangers" className="go-button btn btn-default" onClick={() => this.props.gotoHandler()}>Go!</button>
                     </li>
                 </ul>
             </div>

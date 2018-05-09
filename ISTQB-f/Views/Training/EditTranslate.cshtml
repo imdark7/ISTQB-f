@@ -1,0 +1,7 @@
+﻿<div id="trForm"></div>
+
+<script src="~/Scripts/dist/autosize.js"></script>
+<script type="text/babel">
+    ReactDOM.render(<TranslateForm question={this.state.question} translateHandler={this.translateHandler} />
+    <BodyContent question='@Html.Raw(Json.Encode(Model))' />, document.getElementById("question"));
+</script>

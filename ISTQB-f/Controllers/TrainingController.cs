@@ -29,6 +29,12 @@ namespace ISTQB_f.Controllers
             };
         }
 
+        [HttpGet]
+        public ActionResult EditTranslate(int? id)
+        {
+            return View(GetNextQuestion(id, null));
+        }
+
         [HttpPost]
         public JsonResult SetTranlation(Question questionModel, string strategy)
         {
@@ -109,7 +115,7 @@ namespace ISTQB_f.Controllers
             {
                 if (strategy == "inline")
                 {
-                    qdbo = _db.Questions.First(q => q.Id > id) ?? _db.Questions.First();
+                    qdbo = _db.Questions.FirstOrDefault(q => q.Id > id) ?? _db.Questions.First();
                 }
                 else
                 {

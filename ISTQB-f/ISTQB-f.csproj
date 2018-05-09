@@ -263,6 +263,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Components\AnswerBlock.jsx" />
     <Content Include="Scripts\Components\BodyContent.jsx" />
@@ -307,7 +308,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Training\NextQuestion.cshtml" />
-    <Content Include="Views\Training\Exam.cshtml" />
+    <Content Include="Views\Training\EditTranslate.cshtml" />
     <Content Include="Views\Exam\Start.cshtml" />
     <Content Include="Views\Exam\Init.cshtml" />
   </ItemGroup>

@@ -16,6 +16,9 @@
             correctAnswers: nextProps.correctAnswers
         });
     }
+    componentDidMount() {
+        document.getElementById('question-0').style.background = "#f2f27c";
+    }
     render() {
         var list = [];
         for (let i = 0; i < 10; i++) {
@@ -47,7 +50,7 @@
         return (
             <div>
                 <div>
-                    <table>
+                    <table style={{marginTop: "10px"}}>
                         <tbody>
                             {list}
                         </tbody>
@@ -85,7 +88,7 @@ class TimerDisplay extends React.Component {
         if (this.props.timeLeft <= 0) {
             return null;
         }
-        return <h4>Осталось {this.props.timeLeft} минут</h4>;
+        return <h4 style={{fontSize: "17px"}}>Осталось {this.props.timeLeft} минут</h4>;
     }
 }
 

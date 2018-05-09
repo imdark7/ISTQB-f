@@ -13,7 +13,7 @@
                             type="radio"
                             className="radio-margin align-center"
                             name="AnswerRadio"
-                            style={{ float: "left", height: "100%", width: "25px", marginRight: "-36px" }}
+                            style={{ float: "left", width: "25px", marginRight: "-36px", marginTop: "7px" }}
                             onClick={() => this.props.selectAnswerHandler(this.props.id)}
                             defaultChecked
                             disabled={radioDisabled}
@@ -23,7 +23,7 @@
                             type="radio"
                             className="radio-margin align-center"
                             name="AnswerRadio"
-                            style={{ float: "left", height: "100%", width: "25px", marginRight: "-36px" }}
+                            style={{ float: "left", width: "25px", marginRight: "-36px", marginTop: "7px" }}
                             onClick={() => this.props.selectAnswerHandler(this.props.id)}
                             disabled={radioDisabled}
                         />
