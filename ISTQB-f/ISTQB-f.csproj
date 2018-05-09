@@ -272,6 +272,7 @@
     <Content Include="Scripts\Components\OrganizerBlock.jsx" />
     <Content Include="Scripts\Components\SettingsBlock.jsx" />
     <Content Include="Scripts\Components\SettingsLink.jsx" />
+    <Content Include="Scripts\Components\TranslateForm.jsx" />
     <Content Include="Scripts\dist\autosize.js" />
     <Content Include="Scripts\dist\autosize.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

@@ -32,6 +32,10 @@ namespace ISTQB_f.Controllers
         [HttpGet]
         public ActionResult EditTranslate(int? id)
         {
+            if (id == null)
+            {
+                return new EmptyResult();
+            }
             return View(GetNextQuestion(id, null));
         }
 

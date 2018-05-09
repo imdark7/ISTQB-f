@@ -43,34 +43,32 @@
             openEffect: 'none',
             closeEffect: 'none'
         });
-        $(document).ready(function () {
-            $("a#set-translate").fancybox({
-                'hideOnContentClick': false,
-                'autoScale': true
-            });
-
-            $("a.group").fancybox({
-                'transitionIn': 'elastic',
-                'transitionOut': 'elastic',
-                'speedIn': 600,
-                'speedOut': 200,
-                'overlayShow': false
-            });
+        $(".feedback").fancybox({
+            
         });
     });
 </script>
 <div class="navbarme">
     <div class="header container">
         @Html.ActionLink("ISTQB Trainer", "Index", "Home")
-        <div id="timer-man"></div>
     </div>
 </div>
 <div class="container body-content" id="cont-demo">
     @RenderBody()
     <hr/>
     <footer>
-        <p style="text-align: right">&copy; Григорий Гриб - imdark@yandex.ru | @DateTime.Now.Year </p>
+        <p style="text-align: right"><a class="feedback" href="#feedback">Обратная связь</a></p>
+        <p style="text-align: right">&copy; Григорий Гриб | @DateTime.Now.Year </p>
     </footer>
+</div>
+<div style="display: none">
+    <div id="feedback">
+        <p>Если у Вас есть замечания, предложения, благодарности по поводу сайта,</p>
+        <p>или если вы нашли баг функциональности или неточность перевода,</p>
+        <p>то можете воспользоваться одним из следующих каналов связи со мной:</p>
+        <p>Telegram - <a href="https://t.me/imdark">@@imdark</a></p>
+        <p>Email - <a href="mailto:imdark@yandex.ru">imdark@yandex.ru</a></p>
+    </div>
 </div>
 </body>
 </html>

@@ -16,7 +16,6 @@
         };
         var displayCh = this.props.isExam ? "none" : "inline";
         var displayNext = this.props.isExam ? "inline" : "none";
-        var displayTranslate = this.props.isExam ? "none" : "inline";
         return (
             <div>
                 <p style={{ paddingTop: "10px", fontWeight: "bold" }}>Вопрос № {quest.id}</p>
