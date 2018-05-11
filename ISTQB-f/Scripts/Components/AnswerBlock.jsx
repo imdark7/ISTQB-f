@@ -1,4 +1,7 @@
 ﻿class AnswerBlock extends React.Component {
+    componentDidMount() {
+        document.getElementById(`answ-${this.props.id}`).addEventListener('click', () => document.getElementById(`${this.props.id}`).click());
+    }
     render() {
         var radioDisabled = "";
         if (this.props.examIsOver) {
