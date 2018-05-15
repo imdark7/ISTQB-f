@@ -192,7 +192,7 @@ div.settings-block {
 div.content-block {
     width: auto;
     max-width: 940px;
-    min-width: 320px;
+    min-width: 290px;
     display: inline-block;
 }
 
@@ -223,7 +223,7 @@ div.content-block {
     }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 748px) {
     #settings-label {
         display: none;
     }
@@ -252,8 +252,12 @@ div.content-block {
     #settings-block ul:nth-child(3) {
         width: 150px !important;
     }
-    #settings-block.settings-label { 
+    #settings-block li.settings-label { 
         min-width: 190px !important;
+    }
+    .start-button {
+        width: 230px !important;
+        font-size: 25pt !important;
     }
 }
 
