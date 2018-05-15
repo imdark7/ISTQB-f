@@ -38,10 +38,10 @@
       <publishTime>02/03/2015 09:32:26</publishTime>
     </File>
     <File Include="bin/ISTQB-f.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 16:12:07</publishTime>
     </File>
     <File Include="bin/ISTQB-f.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 16:12:07</publishTime>
     </File>
     <File Include="bin/JavaScriptEngineSwitcher.ChakraCore.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -280,6 +280,9 @@
     <File Include="Content/fancybox/fancybox_sprite.png">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
+    <File Include="Content/info.png">
+      <publishTime>05/11/2018 21:12:28</publishTime>
+    </File>
     <File Include="Content/jquery.fancybox-buttons.css">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
@@ -386,7 +389,7 @@
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>10/04/2018 09:50:06</publishTime>
+      <publishTime>09/05/2018 11:26:30</publishTime>
     </File>
     <File Include="Content/style.css">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -419,28 +422,31 @@
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Scripts/Components/AnswerBlock.jsx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 12:25:31</publishTime>
     </File>
     <File Include="Scripts/Components/BodyContent.jsx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 14:41:24</publishTime>
     </File>
     <File Include="Scripts/Components/ContentBlock.jsx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 11:54:07</publishTime>
     </File>
     <File Include="Scripts/Components/ExamContent.jsx">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Scripts/Components/OrganizerBlock.jsx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 12:34:48</publishTime>
     </File>
     <File Include="Scripts/Components/Question.jsx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 15:27:11</publishTime>
     </File>
     <File Include="Scripts/Components/SettingsBlock.jsx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 11:55:55</publishTime>
     </File>
     <File Include="Scripts/Components/SettingsLink.jsx">
-      <publishTime>05/04/2018 21:36:15</publishTime>
+      <publishTime>09/05/2018 10:50:10</publishTime>
+    </File>
+    <File Include="Scripts/Components/TranslateForm.jsx">
+      <publishTime>09/05/2018 14:34:04</publishTime>
     </File>
     <File Include="Scripts/dist/autosize.js">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -509,19 +515,22 @@
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Exam/Init.cshtml">
-      <publishTime>11/04/2018 09:42:40</publishTime>
+      <publishTime>09/05/2018 12:36:36</publishTime>
     </File>
     <File Include="Views/Exam/Start.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>08/04/2018 14:36:11</publishTime>
+      <publishTime>05/11/2018 21:46:40</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 16:06:30</publishTime>
+    </File>
+    <File Include="Views/Training/EditTranslate.cshtml">
+      <publishTime>09/05/2018 14:26:15</publishTime>
     </File>
     <File Include="Views/Training/Exam.cshtml">
       <publishTime>04/04/2018 09:26:21</publishTime>
@@ -536,7 +545,7 @@
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/05/2018 16:12:23</publishTime>
     </File>
   </ItemGroup>
 </Project>

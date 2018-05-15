@@ -61,27 +61,21 @@
     render() {
         return (
             <div>
-                <table>
-                    <tbody style={{ verticalAlign: "top" }}>
-                        <tr>
-                            <td id="settings-block" style={{ width: "200px", padding: 0 }}>
-                                <SettingsBlock
-                                    langHandler={this.langHandler}
-                                    randHandler={this.randHandler}
-                                    gotoHandler={this.gotoHandler}
-                                    strategy={this.state.strategy}
-                                />
-                            </td>
-                            <td id="content-block" style={{ width: "auto" }}>
-                                <ContentBlock
-                                    questionHandler={this.questionHandler}
-                                    question={this.state.question}
-                                    language={this.state.language}
-                                />
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div id="settings-block" className="settings-block">
+                    <SettingsBlock
+                        langHandler={this.langHandler}
+                        randHandler={this.randHandler}
+                        gotoHandler={this.gotoHandler}
+                        strategy={this.state.strategy}
+                    />
+                </div>
+                <div id="content-block" className="content-block">
+                    <ContentBlock
+                        questionHandler={this.questionHandler}
+                        question={this.state.question}
+                        language={this.state.language}
+                    />
+                </div>
             </div>
         );
     }

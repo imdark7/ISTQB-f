@@ -254,7 +254,10 @@
     <Content Include="Content\Resources\q906.jpg" />
     <Content Include="Content\Resources\q910.jpg" />
     <Content Include="Content\Resources\q928.jpg" />
+    <Content Include="Content\shuffle.png" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\timeline.png" />
+    <Content Include="Content\translation.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

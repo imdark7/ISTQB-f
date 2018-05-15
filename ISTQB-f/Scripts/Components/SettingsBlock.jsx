@@ -19,8 +19,8 @@
         return (
             <div>
                 <ul className="settings-bar green-back">
-                    <li className="settings-label">
-                        <label className="settings-label-text">Настройки</label>
+                    <li id="settings-label" className="settings-label">
+                        <label className="settings-label-text">Настройки:</label>
                     </li>
                     <li>
                         <SettingsLink
