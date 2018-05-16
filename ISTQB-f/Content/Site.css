@@ -192,7 +192,7 @@ div.settings-block {
 div.content-block {
     width: auto;
     max-width: 940px;
-    min-width: 290px;
+    min-width: 280px;
     display: inline-block;
     vertical-align: top;
 }

@@ -104,7 +104,7 @@
     render() {
         return (
             <div>
-                <div id="settings-block" style={{ width: "163px", padding: 0, display: "inline-block", verticalAlign: "top"}}>
+                <div id="settings-block" style={{ width: "163px", padding: 0, display: "inline-block", verticalAlign: "top" }}>
                     <OrganizerBlock
                         questionHandler={this.questionHandler}
                         endExamHandler={this.endExamHandler}
@@ -114,17 +114,19 @@
                         correctAnswers={this.state.correctAnswers}
                     />
                 </div>
-                <div id="content-block" className="content-block" style={{ marginLeft: "10px" }}>
-                    <QuestionBlock
-                        key={this.state.question.id}
-                        questionHandler={this.questionHandler}
-                        selectAnswerHandler={this.selectAnswerHandler}
-                        checkedId={this.state.answered.get(this.state.currentId)}
-                        language={this.state.language}
-                        question={this.state.question}
-                        examIsOver={this.state.examIsOver}
-                        isExam={true}
-                    />
+                <div id="content-block" className="content-block">
+                    <div style={{ marginLeft: "10px" }}>
+                        <QuestionBlock
+                            key={this.state.question.id}
+                            questionHandler={this.questionHandler}
+                            selectAnswerHandler={this.selectAnswerHandler}
+                            checkedId={this.state.answered.get(this.state.currentId)}
+                            language={this.state.language}
+                            question={this.state.question}
+                            examIsOver={this.state.examIsOver}
+                            isExam={true}
+                        />
+                    </div>
                 </div>
             </div>
         );
