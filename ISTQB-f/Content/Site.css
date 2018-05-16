@@ -194,6 +194,7 @@ div.content-block {
     max-width: 940px;
     min-width: 290px;
     display: inline-block;
+    vertical-align: top;
 }
 
 /* Set padding to keep content from hitting the edges */

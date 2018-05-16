@@ -103,34 +103,30 @@
     }
     render() {
         return (
-            <table>
-                <tbody style={{ verticalAlign: "top" }}>
-                    <tr>
-                        <td id="settings-block" style={{ width: "163px", padding: 0 }}>
-                            <OrganizerBlock
-                                questionHandler={this.questionHandler}
-                                endExamHandler={this.endExamHandler}
-                                answered={this.state.answered}
-                                currentId={this.state.currentId}
-                                timeLeft={this.state.timeLeft}
-                                correctAnswers={this.state.correctAnswers}
-                            />
-                        </td>
-                        <td id="content-block" style={{ width: "auto", paddingLeft: "20px" }}>
-                            <QuestionBlock
-                                key={this.state.question.id}
-                                questionHandler={this.questionHandler}
-                                selectAnswerHandler={this.selectAnswerHandler}
-                                checkedId={this.state.answered.get(this.state.currentId)}
-                                language={this.state.language}
-                                question={this.state.question}
-                                examIsOver={this.state.examIsOver}
-                                isExam={true}
-                            />
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div>
+                <div id="settings-block" style={{ width: "163px", padding: 0, display: "inline-block", verticalAlign: "top"}}>
+                    <OrganizerBlock
+                        questionHandler={this.questionHandler}
+                        endExamHandler={this.endExamHandler}
+                        answered={this.state.answered}
+                        currentId={this.state.currentId}
+                        timeLeft={this.state.timeLeft}
+                        correctAnswers={this.state.correctAnswers}
+                    />
+                </div>
+                <div id="content-block" className="content-block" style={{ marginLeft: "10px" }}>
+                    <QuestionBlock
+                        key={this.state.question.id}
+                        questionHandler={this.questionHandler}
+                        selectAnswerHandler={this.selectAnswerHandler}
+                        checkedId={this.state.answered.get(this.state.currentId)}
+                        language={this.state.language}
+                        question={this.state.question}
+                        examIsOver={this.state.examIsOver}
+                        isExam={true}
+                    />
+                </div>
+            </div>
         );
     }
 }
