@@ -51,3 +51,6 @@ ISTQB-f/obj/
 .vs/
 FillData.sql
 packages/
+ISTQB-f/App_Data/QuestionData.ldf
+ISTQB-f/App_Data/QuestionData.mdf
+ISTQB-f/Properties/PublishProfiles/CustomProfile.pubxml.user
