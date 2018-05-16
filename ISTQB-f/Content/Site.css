@@ -202,8 +202,12 @@ div.content-block {
     padding-right: 15px;
 }
 
+#content-block label {
+    font-weight: normal;
+}
+
 @media (max-width: 1250px) {
-    div.settings-block {
+    div .settings-block {
         width: auto;
         display: block;
     }
@@ -227,8 +231,13 @@ div.content-block {
     #settings-label {
         display: none;
     }
-}
 
+    #exam-set div.dropdown {
+        display: block !important;
+        width: 100%;
+        text-align: center;
+    }
+}
 @media (max-width: 620px) {
     #lang-set {
         display: inline !important;
@@ -328,5 +337,19 @@ div.content-block {
 
     #settings-block.settings-label {
         min-width: 190px !important;
+    }
+    #exam-init {
+        font-size: 13pt !important;
+    }
+    #exam-info p {
+        font-size: 11pt !important;
+    }
+    #exam-info {
+        padding-right: 10px !important;
+    }
+    #exam-set div {
+        text-align: center !important;
+        width: 200px;
+        height: auto !important;
     }
 }

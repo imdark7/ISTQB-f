@@ -38,8 +38,8 @@
     }
 </script>
 
-<div class="jumbotron">
-    <div class="navbarme container" style="align-content: center; background: rgb(19, 74, 70)">
+<div class="jumbotron" id="exam-init">
+    <div id="exam-set" class="navbarme container" style="align-content: center; background: rgb(19, 74, 70)">
         <div class="dropdown" style="padding: 7px; height: 62px; color: aliceblue">Параметры экзамена:</div>
         <div class="dropdown">
             <button id="is-native-dropdown" class="dropbtn" onclick="showOptions('is-native-dropdown-options')" style="width: 160px">Родной язык</button>
@@ -56,13 +56,13 @@
             </div>
         </div>
     </div>
-    <div style="font-size: 14pt; margin-top: 20px; padding-left: 20px">
+    <div id="exam-info" style="font-size: 14pt; margin-top: 20px; padding-left: 10px">
         <p>Вам предлагается пройти тренировочный экзамен ISTQB Foundation Level</p>
         <p>☺ 40 случайных вопросов</p>
         <p>☺ Ограничение по времени - 60 минут. Если выбран параметр "Неродной язык", то ограничение - 75 минут</p>
         <p>☺ Проходной балл - 65% или 26 правильных ответов</p>
-        <p class="text-center">
-            <input class="btn btn-primary start-button" type="button" value="Старт" onclick="location.href=`/Exam/Start?language=${language}&isNative=${isNative}`" />
-        </p>
     </div>
+    <p class="text-center">
+        <input class="btn btn-primary start-button" type="button" value="Старт" onclick="location.href=`/Exam/Start?language=${language}&isNative=${isNative}`" />
+    </p>
 </div>
