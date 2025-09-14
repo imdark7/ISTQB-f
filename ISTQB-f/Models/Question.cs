@@ -11,16 +11,6 @@ namespace ISTQB_f.Models
         public string theme { get; set; }
         public List<Answer> answers { get; set; }
 
-        public Question(QuestionDbo q, List<Answer> answers)
-        {
-            id = q.Id;
-            englishText = q.EnglishText;
-            russianText = q.RussianText;
-            resource = q.Resource;
-            theme = q.Theme;
-            this.answers = answers;
-        }
-
         public Question()
         {
         }

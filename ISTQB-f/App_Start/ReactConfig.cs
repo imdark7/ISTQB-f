@@ -1,10 +1,8 @@
-using React;
-
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ISTQB_f.ReactConfig), "Configure")]
 
 namespace ISTQB_f
 {
-	public static class ReactConfig
+    public static class ReactConfig
 	{
 		public static void Configure()
 		{
